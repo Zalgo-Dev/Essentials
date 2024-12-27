@@ -1,0 +1,25 @@
+---
+name: Essentials
+author: ZalgoDev
+authors:
+  - Contributors
+version: 0.0.1
+api: 5.23.2
+main: ZalgoDev\Essentials\Main
+src-namespace-prefix: ZalgoDev\Essentials
+commands:
+  fly:
+    description: Allow player to enable fly
+    permission: essentials.fly
+    permission-message: "You don't have permission to use this command"
+    aliases: 
+      - f
+    usage: /fly (player)
+permissions: 
+  essentials.fly:
+    description: Allow player to use command /fly
+    default: op
+  essentials.fly.other:
+    description: Allow player to use command /fly on other players
+    default: op
+...
