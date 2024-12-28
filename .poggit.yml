@@ -5,5 +5,5 @@ branches:
 projects:
   Essentials:
     path: ""
-    icon: icon.webp
+    icon: icon.png
 ...
