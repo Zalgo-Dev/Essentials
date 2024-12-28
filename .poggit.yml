@@ -5,4 +5,5 @@ branches:
 projects:
   Essentials:
     path: ""
+    icon: icon.png
 ...
