@@ -52,3 +52,7 @@ The Essentials plugin is under active development. Here's what we're planning to
 - 💬 **Chat Formatting**: Customize player chat messages.
 
 Stay tuned for updates! 🚧
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square" alt="Made with Love">
+</p>
