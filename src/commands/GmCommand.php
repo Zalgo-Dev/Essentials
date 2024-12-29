@@ -13,7 +13,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 class GmCommand extends Command {
-    private Plugin $plugin;
+    private PluginBase $plugin;
 
     public function __construct(Plugin $plugin) {
         parent::__construct("gm", "Change gamemode", "/gm <0|1|2> <pseudo: target>", []);
