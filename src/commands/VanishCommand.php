@@ -7,7 +7,7 @@ namespace ZalgoDev\Essentials\commands;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
-use pocketmine\plugin\PluginBase; // Changer Plugin en PluginBase
+use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 class VanishCommand extends Command {

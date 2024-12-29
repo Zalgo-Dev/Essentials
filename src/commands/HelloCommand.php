@@ -7,22 +7,22 @@ namespace ZalgoDev\Essentials\commands;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
 class HelloCommand extends Command {
 
     private PluginBase $plugin;
 
-    public function __construct(Pluginbase $plugin) {
+    public function __construct(PluginBase $plugin) {
         parent::__construct(
             "hello",
             "Say hello to the player",
+            "/hello [player]"
         );
 
         $this->plugin = $plugin;
         $this->setPermission("essentials.hello");
-        $this->setUsage("/hello <pseudo: target>");
     }
 
     public function execute(CommandSender $sender, string $label, array $args): bool {
