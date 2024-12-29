@@ -2,7 +2,7 @@ name: Essentials
 author: ZalgoDev
 authors:
   - Contributors
-version: 0.1.0
+version: 0.1.1
 api: 5.0.0
 main: ZalgoDev\Essentials\Main
 src-namespace-prefix: ZalgoDev\Essentials
