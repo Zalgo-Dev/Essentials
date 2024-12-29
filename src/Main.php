@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace ZalgoDev\Essentials;
 
 use pocketmine\plugin\PluginBase;
-use ZalgoDev\Essentials\Commands\FlyCommand;
-use ZalgoDev\Essentials\Commands\GmCommand;
-use ZalgoDev\Essentials\Commands\VanishCommand;
+use ZalgoDev\Essentials\commands\FlyCommand;
+use ZalgoDev\Essentials\commands\GmCommand;
+use ZalgoDev\Essentials\commands\VanishCommand;
 
 class Main extends PluginBase {
 
