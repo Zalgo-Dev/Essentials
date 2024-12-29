@@ -1,66 +1,43 @@
-# ✨ Essentials Plugin for PocketMine-MP ✨
+## Essentials for PocketMine-MP 🌟
+[![](https://poggit.pmmp.io/shield.state/Essentials)](https://poggit.pmmp.io/p/Essentials)
 
-**Essentials** is a versatile plugin designed for PocketMine-MP servers, providing essential commands and features to enhance both gameplay and server administration.
+The Essentials plugin for PocketMine-MP provides essential commands for server administration and gameplay enhancements. With this plugin, server owners and operators can easily manage key player features such as flying, changing gamemodes, and toggling invisibility.
 
-## 🚀 Features
+## ✨ Features
 
-- 🕊️ **Flight Mode Toggle**: Enable or disable flight mode for yourself or other players.
-- 🎮 **Quick Gamemode Access**: Use `/gm` to conveniently switch between Survival, Creative, and Adventure.
-- 🕶️ **Vanish Mode**: Toggle invisibility for yourself or a target player.
+Fly Command 🕊️: Enable or disable flying mode for players.
 
-## 📜 Commands
+Gamemode Command 🎮: Change a player's gamemode (Survival, Creative, Adventure).
 
-| Command                | Description                                             | Permission                   | Default |
-|------------------------|---------------------------------------------------------|------------------------------|---------|
-| `/fly`                 | Toggle flight mode                                      | `essentials.fly`             | OP      |
-| `/fly {player}`        | Toggle flight mode for another player                   | `essentials.fly.other`       | OP      |
-| `/gm 0 / 1 / 2`        | Switch your own gamemode (0=Survival, 1=Creative, 2=Adventure) | `essentials.gm`      | OP      |
-| `/gm 0 / 1 / 2 {player}` | Switch another player's gamemode                     | `essentials.gm.other`     | OP      |
-| `/vanish`              | Toggle vanish mode for yourself                         | `essentials.vanish`       | OP      |
-| `/vanish {player}`     | Toggle vanish mode for another player                  | `essentials.vanish.other` | OP      |
+Vanish Command 👻: Toggle player invisibility.
 
-## 🛡️ Permissions
+Permission-based Access 🔒: Commands are protected by permissions to ensure only authorized users can execute them.
 
-| Permission                   | Description                                         | Default |
-|-----------------------------|-----------------------------------------------------|---------|
-| `essentials.fly`             | Allows toggling flight mode                        | OP      |
-| `essentials.fly.other`       | Allows toggling flight mode for other players      | OP      |
-| `essentials.gm`           | Allows changing your own gamemode                  | OP      |
-| `essentials.gm.other`     | Allows changing gamemode of other players          | OP      |
-| `essentials.vanish`       | Allows toggling vanish mode for yourself           | OP      |
-| `essentials.vanish.other` | Allows toggling vanish mode for other players      | OP      |
-| `minecraft.*`                | Permission for the default /gamemode command       | OP      |
+## 📜 Commands & 🛡️ Permissions
 
-## 🛠️ Installation
+⚠️ Ensure your permissions plugin (e.g., PurePerms) is properly configured to assign these permissions to your players or groups.
 
-1. 📥 Download the `.phar` file from [Poggit](https://poggit.pmmp.io/p/Essentials/0.0.1).
-2. 📂 Place the `.phar` file in your server's `plugins` directory.
-3. 🔄 Restart your PocketMine-MP server.
+| Command | Description | Usage                         | Permissions |
+| --- | --- |-------------------------------| --- |
+| `/fly` 🕊️ | Toggle flight mode | `/fly`, `/fly <player>`       | `essentials.fly`, `essentials.fly.others` |
+| `/gm` 🎮 | Change player's gamemode | `/gm <0/1/2> [player]`        | `essentials.gm`, `essentials.gm.others` |
+| `/vanish` 👻 | Toggle invisibility mode | `/vanish`, `/vanish <player>` | `essentials.vanish`, `essentials.vanish.others` |
 
-## 🤝 Contributing
+## ⚙️ Installation
 
-Contributions are welcome! Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated. Follow these steps to contribute:
+1. Download the Essentials plugin.
+2. Place the plugin's .phar file into the plugins directory of your PocketMine-MP server.
+3. Start or restart the server.
+4. Enjoy
 
-1. 🍴 Fork the repository.
-2. 🌿 Create a new branch for your feature or fix.
-3. 💾 Commit your changes and push them to your fork.
-4. 📤 Submit a pull request for review.
+## 💬 Support
 
-## 📝 License
+If you encounter any issues or have feature requests, please visit the GitHub Repository and open an issue.
 
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
+## 📄 License
 
-## 🌟 Future Plans
+This plugin is open-source and available under the MIT License. Contributions are welcome! 🛠️
 
-Essentials is under active development. Here’s what we plan to add in upcoming versions:
+## 👏 Credits
 
-- ✈️ **Teleport Commands**: Easily teleport yourself or others.
-- 🏠 **Home and Warp Systems**: Set, teleport to, and manage homes and warp points.
-- 🎁 **Item Kits**: Provide predefined item kits to players.
-- 💬 **Chat Formatting**: Customize player chat messages.
-
-Stay tuned for updates! 🚧
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=flat-square" alt="Made with Love">
-</p>
+Developed by Zalgo-Dev. Special thanks to the PocketMine-MP community for their support and documentation.
