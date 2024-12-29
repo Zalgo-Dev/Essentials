@@ -7,14 +7,14 @@ namespace ZalgoDev\Essentials\commands;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase; // Changer Plugin en PluginBase
 use pocketmine\utils\TextFormat;
 
 class VanishCommand extends Command {
 
-    private Plugin $plugin;
+    private PluginBase $plugin; // Typage mis à jour
 
-    public function __construct(Plugin $plugin) {
+    public function __construct(PluginBase $plugin) { // Typage mis à jour
         parent::__construct(
             "vanish",
             "Allow player to use Vanish mode",
@@ -29,7 +29,7 @@ class VanishCommand extends Command {
     public function execute(CommandSender $sender, string $label, array $args): bool {
         $mcPrefix = "&4[&eE&cs&ds&be&a&en&at&bi&da&cl&es&4] ";
         $essentialsPrefix = str_replace("&", "§", $mcPrefix);
-        
+
         if (!$this->testPermission($sender)) {
             $sender->sendMessage($essentialsPrefix . TextFormat::RED . "§cYou don't have permission to use this command.");
             return true;
