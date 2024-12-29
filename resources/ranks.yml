@@ -1,0 +1,23 @@
+Admin:
+  Display: "§cAdmin"
+  parent: null
+  level: 100
+  default: false
+  permissions:
+    - essentials.*
+
+Mod:
+  Display: "§5Mod"
+  parent: Admin
+  level: 50
+  default: false
+  permissions:
+    - essentials.fly
+
+Player:
+  Display: "§4Player"
+  parent: Mod
+  level: 10
+  default: true
+  permissions:
+    - essentials.home

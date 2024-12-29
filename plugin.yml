@@ -6,18 +6,22 @@ version: 0.0.1
 api: 5.0.0
 main: ZalgoDev\Essentials\Main
 src-namespace-prefix: ZalgoDev\Essentials
-commands:
-  fly:
-    description: Toggle flight mode for yourself or another player
-    permission: essentials.fly
-    permission-message: "You don't have permission to use this command."
-    aliases:
-      - f
-    usage: /fly [player]
 permissions:
   essentials.fly:
-    description: Allow players to toggle flight mode
+    description: Allow players to use command /fly
     default: op
-  essentials.fly.other:
-    description: Allow players to toggle flight mode for others
+  essentials.fly.others:
+    description: Allow players to use command /fly <player>
+    default: op
+  essentials.vanish:
+    description: Allow players to use command /vanish
+    default: op
+  essentials.vanish.others:
+    description: Allow players to use command /vanish <player>
+    default: op
+  essentials.gm:
+    description: Allow players to use command /gm
+    default: op
+  essentials.gm.others:
+    description: Allow players to use command /gm <player>
     default: op
