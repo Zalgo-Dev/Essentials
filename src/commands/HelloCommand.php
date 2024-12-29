@@ -12,7 +12,7 @@ use pocketmine\utils\TextFormat;
 
 class HelloCommand extends Command {
 
-    private Plugin $plugin;
+    private PluginBase $plugin;
 
     public function __construct(Plugin $plugin) {
         parent::__construct(
