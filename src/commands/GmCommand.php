@@ -15,7 +15,7 @@ use pocketmine\utils\TextFormat;
 class GmCommand extends Command {
     private PluginBase $plugin;
 
-    public function __construct(Plugin $plugin) {
+    public function __construct(PluginBase $plugin) {
         parent::__construct("gm", "Change gamemode", "/gm <0|1|2> <pseudo: target>", []);
         $this->plugin = $plugin;
         $this->setPermission("essentials.gm");
