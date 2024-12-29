@@ -14,7 +14,7 @@ class HelloCommand extends Command {
 
     private PluginBase $plugin;
 
-    public function __construct(Plugin $plugin) {
+    public function __construct(Pluginbase $plugin) {
         parent::__construct(
             "hello",
             "Say hello to the player",
