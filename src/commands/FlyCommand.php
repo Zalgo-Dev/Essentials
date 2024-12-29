@@ -15,7 +15,7 @@ class FlyCommand extends Command {
 
     private PluginBase $plugin;
 
-    public function __construct(Plugin $plugin) {
+    public function __construct(PluginBase $plugin) {
         parent::__construct(
             "fly",
             "Allow player to use Fly mode",
